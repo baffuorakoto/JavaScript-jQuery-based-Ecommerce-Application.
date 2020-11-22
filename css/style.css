@@ -1,0 +1,142 @@
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #b1b1b1;
+    font-weight: 300;
+    /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% ); */
+    /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(151,10,130,1) 0%, rgba(33,33,33,1) 100.2% ); */
+    box-sizing: border-box;
+
+}
+
+h1 {
+    font-weight: 700;
+    color: rgba(151, 10, 130, 1);
+}
+
+.prd__title {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: rgba(151, 10, 130, 1);
+}
+
+h2 {
+    font-size: 1.1em;
+    color: rgb(33, 124, 177);
+}
+
+h3 {
+    font-size: 1.2;
+}
+
+.detail-main {
+    display: flex;
+    overflow: hidden;
+}
+
+.detail-main .product-col {
+    flex: 1;
+}
+
+.prod-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.product-size__item {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    background-color: #b1b1b1;
+    color: #fff;
+    line-height: 2;
+    text-align: center;
+    cursor: pointer;
+}
+
+.prod-qty {
+    justify-items: center;
+
+}
+
+.prod-qty .product-color__item:not(:nth-child(2)) {
+    margin: 0 10px;
+    height: 25px;
+    width: 25px;
+    border: 2px solid rgba(151, 10, 130, 1);
+    border-radius: 50%;
+    overflow: hidden;
+    justify-self: center;
+
+}
+
+.prod-qty .product-color__item:nth-child(2) {
+    height: 100%;
+    border: 1px solid rgba(151, 10, 130, 1);
+    width: 10%;
+}
+
+.prod-qty .product-color__item input {
+    height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: .3rem;
+    border: 1px soli rgba(151, 10, 130, 1);
+    color: rgba(151, 10, 130, 1);
+    text-align: center;
+
+}
+
+.prod-qty .product-color__item button {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 0;
+    color: rgba(151, 10, 130, 1);
+    font-size: 1.3rem;
+    line-height: -1.8;
+}
+
+.product-size__item:first-child {
+    margin-left: 0;
+}
+
+.product-size__item:last-child {
+    margin-right: 0;
+}
+
+
+.detail-main .product-image-container {
+    width: 100%;
+
+}
+
+.detail-main .product-image-container img {
+    width: 100%;
+}
+
+.product-content-info-container {
+    padding: 3rem;
+
+}
+
+.prd-desc {
+    line-height: 1.5;
+    border-top: 1px solid #b1b1b128;
+    font-size: .8rem;
+}
+
+.prd-btn {
+    padding: 1em;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(151, 10, 130, 1);
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
