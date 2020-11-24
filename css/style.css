@@ -37,11 +37,34 @@ h3 {
     flex: 1;
 }
 
+.product-col.items {
+    overflow: hidden;
+}
+
+.prod__list-item {
+    width: 40%;
+    display: flex;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.snapper_nav_item-selected {
+    border: solid 3px rgba(151, 10, 130, 1);
+}
+
+.prod__list-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    ;
+}
+
 .prod-list {
     display: flex;
     list-style: none;
     padding: 0;
     margin-bottom: 20px;
+    align-items: center;
 }
 
 .product-size__item {
@@ -55,12 +78,39 @@ h3 {
     cursor: pointer;
 }
 
+.prod-list.product-color {
+    align-items: center;
+    color: #858585;
+}
+
+.prod-list.product-color .product-color__item {
+    border: 2px solid rgb(33, 124, 177);
+    margin-right: 10px;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.prod-list.product-color .product-color__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: scale(2);
+    overflow: hidden;
+}
+
 .prod-qty {
     justify-items: center;
 
 }
 
-.prod-qty .product-color__item:not(:nth-child(2)) {
+.prod-qty .product-cart__plus,
+.prod-qty .product-cart__minus {
     margin: 0 10px;
     height: 25px;
     width: 25px;
@@ -71,25 +121,27 @@ h3 {
 
 }
 
-.prod-qty .product-color__item:nth-child(2) {
+.prod-qty .product-cart__input {
     height: 100%;
     border: 1px solid rgba(151, 10, 130, 1);
     width: 10%;
 }
 
-.prod-qty .product-color__item input {
+.prod-qty .product-cart__input input {
     height: 100%;
     max-width: 100%;
     overflow: hidden;
     box-sizing: border-box;
     padding: .3rem;
-    border: 1px soli rgba(151, 10, 130, 1);
+    border: 1px solid rgba(151, 10, 130, 1);
     color: rgba(151, 10, 130, 1);
     text-align: center;
+    font-weight: 700;
 
 }
 
-.prod-qty .product-color__item button {
+.prod-qty .product-cart__plus button,
+.product-cart__minus button {
     height: 100%;
     width: 100%;
     background-color: #fff;
@@ -125,12 +177,12 @@ h3 {
 
 .prd-desc {
     line-height: 1.5;
-    border-top: 1px solid #b1b1b128;
+    border-top: 1px solid #b1b1b159;
     font-size: .8rem;
 }
 
 .prd-btn {
-    padding: 1em;
+    padding: .8em;
     color: #fff;
     text-decoration: none;
     background-color: rgba(151, 10, 130, 1);
@@ -139,4 +191,10 @@ h3 {
     margin-top: 1rem;
     font-weight: 700;
     font-size: 1rem;
+}
+
+footer.footer {
+    background-color: #eee;
+    padding: 2rem;
+    position: sticky;
 }
